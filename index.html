@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>WebPhoto</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-info mb-5">
+        <div class="container">
+            <a href="" class="navbar-brand">Online Image Basics</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 m-auto">
+                <div class="custom-file mb-3">
+                    <input type="file" name="" id="upload-file" class="custom-file-input">
+                    <label for="upload-file" class="custom-file-label">Choose Image</label>
+                </div>
+
+                <canvas id="canvas"></canvas>
+
+                <h4 class="text-center my-3">Filters</h4>
+            
+                 <div class="row text-center my-4">
+                    <!-- Brightness  -->
+                    <div class="col-md-3">
+                         <div class="btn-group btn-group-sm mb-3">
+                             <button class="filter-btn brightness-remove btn btn-success">-</button>
+                             <button class="btn btn-secondary btn-disabled" disabled>Brightness</button>
+                             <button class="filter-btn brightness-add btn btn-success">+</button>
+                         </div>
+                     </div>
+                     <!-- Contrast -->
+                     <div class="col-md-3">
+                        <div class="btn-group btn-group-sm mb-3">
+                            <button class="filter-btn contrast-remove btn btn-success">-</button>
+                            <button class="btn btn-secondary btn-disabled" disabled>Contrast</button>
+                            <button class="filter-btn contrast-add btn btn-success">+</button>
+                        </div>
+                    </div>
+                    <!-- Saturation -->
+                    <div class="col-md-3">
+                        <div class="btn-group btn-group-sm mb-3">
+                            <button class="filter-btn saturation-remove btn btn-success">-</button>
+                            <button class="btn btn-secondary btn-disabled" disabled>Saturation</button>
+                            <button class="filter-btn saturation-add btn btn-success">+</button>
+                        </div>
+                    </div>
+                    <!-- Vibrance -->
+                    <div class="col-md-3">
+                        <div class="btn-group btn-group-sm mb-3">
+                            <button class="filter-btn vibrance-remove btn btn-success">-</button>
+                            <button class="btn btn-secondary btn-disabled" disabled>Vibrance</button>
+                            <button class="filter-btn vibrance-add btn btn-success">+</button>
+                        </div>
+                    </div>
+                 </div> <!--./row ends here-->
+
+                 <h4 class="text-center my-3">Effects</h4>
+
+                 <div class="row mb-3">
+                     <div class="col-md-3">
+                         <button class="filter-btn vintage-add btn btn-outline-success w-100 mb-3">Vintage</button>
+                     </div>
+                     <div class="col-md-3">
+                        <button class="filter-btn lomo-add btn btn-outline-success w-100 mb-3">Lomo</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn clarity-add btn btn-outline-success w-100 mb-3">Clarity</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn sincity-add btn btn-outline-success w-100 mb-3">Sin City</button>
+                    </div>
+                 </div> <!--Row-1 of Effects End Here-->
+                 
+                 <div class="row mb-3">
+                    <div class="col-md-3">
+                        <button class="filter-btn crossprocess-add btn btn-outline-success w-100 mb-3">Cross Process</button>
+                    </div>
+                    <div class="col-md-3">
+                       <button class="filter-btn pinhole-add btn btn-outline-success w-100 mb-3">Pinhole</button>
+                   </div>
+                   <div class="col-md-3">
+                       <button class="filter-btn nostalgia-add btn btn-outline-success w-100 mb-3">Nostalgia</button>
+                   </div>
+                   <div class="col-md-3">
+                       <button class="filter-btn hermajesty-add btn btn-outline-success w-100 mb-3">Her Majesty</button>
+                   </div>
+                </div> <!--Row-2 of Effects End Here-->
+
+                <div class="row my-5">
+                    <div class="col-md-6">
+                        <button id="download-btn" class="btn btn-success w-100 mb-4">Download</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button id="revert-btn" class="btn btn-danger w-100">Remove Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js" integrity="sha512-JjFeUD2H//RHt+DjVf1BTuy1X5ZPtMl0svQ3RopX641DWoSilJ89LsFGq4Sw/6BSBfULqUW/CfnVopV5CfvRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
